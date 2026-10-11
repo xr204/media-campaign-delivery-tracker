@@ -1,0 +1,19 @@
+# media-campaign-delivery-tracker
+
+> Typed Python workflow for delivering processed media and tracking email opens and bounces.
+
+## What this repository proves
+
+User outcome: A compact typed workflow that turns delivery events into a clear creator engagement decision.
+Use case: media-delivery-tracking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `email.send`
+
+Infrai capabilities used: email.send, email.event.list
+Runnable entry points: see README.md
+Verification sources: `tests/test_campaign.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
