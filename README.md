@@ -45,3 +45,7 @@ That minimal setup is fine for a dev sandbox, but as someone who owns the platfo
 - **Media Campaign Delivery Tracker:** Default mail routes through a **shared** verified sender; acceptable for tests, but expect generic From, capped throughput, and pooled reputation that can bite your SLOs.
 - **Media Campaign Delivery Tracker:** For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, publish the returned **SPF / DKIM / DMARC** DNS records, then send via `from: "you@mail.yourco.com"` to keep deliverability under your control.
 - **Media Campaign Delivery Tracker:** Isolate a dedicated subdomain and **warm it up** (gradual volume ramp over days) so you don't trip provider rate limits and burn the error budget.
+
+## Further reading
+
+- [How to Choose an Affordable Email API: High Deliverability in US/EU 2026](docs/how-to-choose-an-affordable-email-api-high-delive-p5ujct.md)
